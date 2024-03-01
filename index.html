@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <script src="criplitografia.js"></script>
+    <link rel="stylesheet" href="Estilos/style.css">
+    <link rel="icon" type="image/png" sizes="16x16"  href="/imagens/favicons/favicon-16x16.png">
+</head>
+<body>
+
+    <header class="cabecalho">                    
+        <img src="imagens/favicons/favicon-16x16.png" alt="icone de engrenagem">
+    </header>
+    <main class="principal">
+        <section class="principal-esquerdo">
+            <textarea class="principal-texto" id="mensagem"  >Digite seu texto</textarea>
+            <div class="principal-aviso">
+                <img src="imagens/bi_exclamation-circle-fill.png" alt="Ponto de exclamação/ alerta">
+                <p class="aviso">Apenas letras minusculas e sem acento</p>
+            </div>
+            <div class="botoes">
+                <button class="botao-escuro" onclick="pegarTexto(vogais,listaDeVogais,numeros)">Criptografar</button>
+                <button class="botao-claro" onclick="descriptgrafar(vogais,listaDeVogais,numeros)">Descriptografar</button>
+            </div>
+        </section>
+        <section class="principal-direito">
+            <div class="principal-direito-texto" id="decodificado">
+                <img class="principal-imagem" src="imagens/Boneco.svg" alt="Menino com lupa, digite seu texto">
+                <p class="principal-direito-texto-destaque">Nenhuma mensagem encontrada</p>
+                <p class="principal-direito-texto-simples">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>                      
+            <button class="botao-escuro-direito" onclick="copiar()">Copiar</button>
+        </section>
+    </main>        
+    <footer class="rodape">
+        <p>Desemvolvido por Judson Pires. 2024</p>
+    </footer>
+</body>
+</html>
